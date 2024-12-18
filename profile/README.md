@@ -281,10 +281,10 @@ Les données des jeux sont affichées sous forme de graphiques à l'aide de Char
 
 ## 💡 **Défis et Solutions**
 1. Trouver une API qui fonctionne bien avec MongoDB et qui a assez de données.
-  - Solutions : Nous avons chercher une API qui retourne des valeurs qui s'entreposent facilement dans MongoDB et qui à plus de 300 000 données.
+  - Solutions : Nous avons cherché une API qui retourne des valeurs qui s'entreposent facilement dans MongoDB et qui à plus de 300 000 données.
 
-2. Créer les aggrégations afin de prendre les données qu'on veux afficher sur des graphiques
-  - Solutions : Faire de la recherche dans plusieurs documentations en ligneé
+2. Créer les agrégations afin de prendre les données qu'on veut afficher sur des graphiques
+  - Solutions : Faire de la recherche dans plusieurs documentations en ligne
 
 ## 📊 **Résultats des Tests**
 ## Vue d’Ensemble
