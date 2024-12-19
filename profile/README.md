@@ -274,117 +274,121 @@ Comme vous pouvez voir, les éléments qui ont étés filtrés sont:
 ### Endpoints Utilisateur
 
 **POST /register**
-    - Description : Créer un nouvel utilisateur.
-    - Réponse : Un message confirmant la création de l'utilisateur.
+  - Description : Créer un nouvel utilisateur.
+  - Réponse : Un message confirmant la création de l'utilisateur.
 
 **POST /login**
-    - Description : Se connecter à son compte.
-    - Réponse : Un message confirmant la connexion de l'utilisateur.
+  - Description : Se connecter à son compte.
+  - Réponse : Un message confirmant la connexion de l'utilisateur.
+
+Sure, here is the raw content of the "Endpoints Statistiques" section:
+
 
 ### Endpoints Statistiques
 
 **GET /getPlatformsPopularity**
-    - Description : Obtenir la popularité des plateformes basée sur les votes et le nombre de jeux.
-    - Réponse :
-        - 200 : Une liste de plateformes avec leur popularité moyenne.
-        - 500 : Erreur interne du serveur.
+- Description: Obtenir la popularité des plateformes basée sur les votes et le nombre de jeux.
+- Réponse:
+  - 200: Une liste de plateformes avec leur popularité moyenne.
+  - 500: Erreur interne du serveur.
 
 **GET /getPlatformsWhereGamesReleaseFirst**
-    - Description : Obtenir les plateformes où les jeux sont d'abord publiés.
-    - Réponse :
-        - 200 : Une liste de plateformes avec le nombre de jeux publiés en premier.
-        - 500 : Erreur interne du serveur.
+- Description: Obtenir les plateformes où les jeux sont d'abord publiés.
+- Réponse:
+  - 200: Une liste de plateformes avec le nombre de jeux publiés en premier.
+  - 500: Erreur interne du serveur.
 
 **GET /getGamesPerPlatforms**
-    - Description : Obtenir le nombre de jeux par plateforme.
-    - Réponse :
-        - 200 : Une liste de plateformes avec le nombre de jeux.
-        - 500 : Erreur interne du serveur.
+- Description: Obtenir le nombre de jeux par plateforme.
+- Réponse:
+  - 200: Une liste de plateformes avec le nombre de jeux.
+  - 500: Erreur interne du serveur.
 
 **GET /getGenrePopularity**
-    - Description : Obtenir la popularité des genres basée sur le nombre de jeux.
-    - Réponse :
-        - 200 : Une liste de genres avec leur popularité.
-        - 500 : Erreur interne du serveur.
+- Description: Obtenir la popularité des genres basée sur le nombre de jeux.
+- Réponse:
+  - 200: Une liste de genres avec leur popularité.
+  - 500: Erreur interne du serveur.
 
 **GET /getGenreYearlyPopularity**
-    - Description : Obtenir la popularité annuelle d'un genre spécifique.
-    - Paramètres :
-        - genre_name (query, requis) : Le nom du genre.
-    - Réponse :
-        - 200 : Une liste de données de popularité annuelle pour le genre spécifié.
-        - 400 : Veuillez fournir un nom de genre.
-        - 500 : Erreur interne du serveur.
+- Description: Obtenir la popularité annuelle d'un genre spécifique.
+- Paramètres:
+  - genre_name (query, requis): Le nom du genre.
+- Réponse:
+  - 200: Une liste de données de popularité annuelle pour le genre spécifié.
+  - 400: Veuillez fournir un nom de genre.
+  - 500: Erreur interne du serveur.
 
 **GET /getNumOfGameOfEachGenre**
-    - Description : Obtenir le nombre de jeux pour chaque genre.
-    - Réponse :
-        - 200 : Une liste de genres avec le nombre de jeux.
-        - 500 : Erreur interne du serveur.
+- Description: Obtenir le nombre de jeux pour chaque genre.
+- Réponse:
+  - 200: Une liste de genres avec le nombre de jeux.
+  - 500: Erreur interne du serveur.
 
 **GET /getPlatPopularityBy2Months**
-    - Description : Obtenir la popularité des plateformes sur une période de deux mois spécifique.
-    - Paramètres :
-        - startMonth (query, requis) : Le mois de début (1-12).
-        - endMonth (query, requis) : Le mois de fin (1-12).
-    - Réponse :
-        - 200 : Une liste de plateformes avec leur popularité sur la période spécifiée.
-        - 400 : Veuillez fournir un mois valide.
-        - 500 : Erreur interne du serveur.
+- Description: Obtenir la popularité des plateformes sur une période de deux mois spécifique.
+- Paramètres:
+  - startMonth (query, requis): Le mois de début (1-12).
+  - endMonth (query, requis): Le mois de fin (1-12).
+- Réponse:
+  - 200: Une liste de plateformes avec leur popularité sur la période spécifiée.
+  - 400: Veuillez fournir un mois valide.
+  - 500: Erreur interne du serveur.
 
 **GET /getTop10GamesOfPlatform**
-    - Description : Obtenir les 10 meilleurs jeux d'une plateforme spécifique.
-    - Paramètres :
-        - platform_name (query, requis) : Le nom de la plateforme.
-    - Réponse :
-        - 200 : Une liste des 10 meilleurs jeux pour la plateforme spécifiée.
-        - 400 : Veuillez fournir un nom de plateforme.
-        - 500 : Erreur interne du serveur.
+- Description: Obtenir les 10 meilleurs jeux d'une plateforme spécifique.
+- Paramètres:
+  - platform_name (query, requis): Le nom de la plateforme.
+- Réponse:
+  - 200: Une liste des 10 meilleurs jeux pour la plateforme spécifiée.
+  - 400: Veuillez fournir un nom de plateforme.
+  - 500: Erreur interne du serveur.
 
 **GET /getTop10GamesOfGenre**
-    - Description : Obtenir les 10 meilleurs jeux d'un genre spécifique.
-    - Paramètres :
-        - genre_name (query, requis) : Le nom du genre.
-    - Réponse :
-        - 200 : Une liste des 10 meilleurs jeux pour le genre spécifié.
-        - 400 : Veuillez fournir un nom de genre.
-        - 500 : Erreur interne du serveur.
+- Description: Obtenir les 10 meilleurs jeux d'un genre spécifique.
+- Paramètres:
+  - genre_name (query, requis): Le nom du genre.
+- Réponse:
+  - 200: Une liste des 10 meilleurs jeux pour le genre spécifié.
+  - 400: Veuillez fournir un nom de genre.
+  - 500: Erreur interne du serveur.
 
 **GET /getPlatformQualityByTime**
-    - Description : Obtenir la qualité d'une plateforme au fil du temps.
-    - Paramètres :
-        - platform_name (query, requis) : Le nom de la plateforme.
-    - Réponse :
-        - 200 : Une liste de données de qualité pour la plateforme spécifiée au fil du temps.
-        - 400 : Veuillez fournir un nom de plateforme.
-        - 500 : Erreur interne du serveur.
+- Description: Obtenir la qualité d'une plateforme au fil du temps.
+- Paramètres:
+  - platform_name (query, requis): Le nom de la plateforme.
+- Réponse:
+  - 200: Une liste de données de qualité pour la plateforme spécifiée au fil du temps.
+  - 400: Veuillez fournir un nom de plateforme.
+  - 500: Erreur interne du serveur.
 
 **GET /getGenreQualityByTime**
-    - Description : Obtenir la qualité d'un genre au fil du temps.
-    - Paramètres :
-        - genre_name (query, requis) : Le nom du genre.
-    - Réponse :
-        - 200 : Une liste de données de qualité pour le genre spécifié au fil du temps.
-        - 400 : Veuillez fournir un nom de genre.
-        - 500 : Erreur interne du serveur.
+- Description: Obtenir la qualité d'un genre au fil du temps.
+- Paramètres:
+  - genre_name (query, requis): Le nom du genre.
+- Réponse:
+  - 200: Une liste de données de qualité pour le genre spécifié au fil du temps.
+  - 400: Veuillez fournir un nom de genre.
+  - 500: Erreur interne du serveur.
 
 **GET /getGOTY**
-    - Description : Obtenir le jeu de l'année (GOTY) pour chaque année.
-    - Réponse :
-        - 200 : Une liste des GOTY pour chaque année.
-        - 500 : Erreur interne du serveur.
+- Description: Obtenir le jeu de l'année (GOTY) pour chaque année.
+- Réponse:
+  - 200: Une liste des GOTY pour chaque année.
+  - 500: Erreur interne du serveur.
 
 **GET /getAllGenres**
-    - Description : Obtenir une liste de tous les genres.
-    - Réponse :
-        - 200 : Une liste de tous les genres.
-        - 500 : Erreur interne du serveur.
+- Description: Obtenir une liste de tous les genres.
+- Réponse:
+  - 200: Une liste de tous les genres.
+  - 500: Erreur interne du serveur.
 
 **GET /getAllPlatforms**
-    - Description : Obtenir une liste de toutes les plateformes.
-    - Réponse :
-        - 200 : Une liste de toutes les plateformes.
-        - 500 : Erreur interne du serveur.
+- Description: Obtenir une liste de toutes les plateformes.
+- Réponse:
+  - 200: Une liste de toutes les plateformes.
+  - 500: Erreur interne du serveur.
+
         
 ## 📈 **Visualisation de l'API**
 Les données des jeux sont affichées sous forme de graphiques à l'aide de Chart.js dans l'interface frontend. Ces graphiques peuvent inclure des statistiques comme le nombre de votes, le score moyen, et d'autres métriques pertinentes extraites des jeux.
