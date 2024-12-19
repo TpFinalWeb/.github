@@ -249,6 +249,10 @@ Comme vous pouvez voir, les éléments qui ont étés filtrés sont:
    npm start
   ```
 
+Pour teste l'api vous pouvez ouvrir le frontend à l'adresse suivante : https://fe-mfpk.onrender.com/
+Le backend est à l'adresse suivante: https://backend-ebne.onrender.com/api-docs/
+Prendre compte que les pages prennent quelques minutes à s'ouvrir la première fois (Le temps que render rende la page disponible). Une fois les pages ouverte, l'utilisation est fluide. Un problème qui pourrait survenir serait que le backend utilise trop de mémoire(nous sommes limiter à ce qui est gratuit). Si le backend utilise trop de mémoire, render va redémarrer le backend d'ici quelque minute.
+
 ## 🛠️ **Utilisation de l'API**
 
 ### Endpoint CRUD
