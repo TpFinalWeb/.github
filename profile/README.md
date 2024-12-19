@@ -203,13 +203,15 @@ Comme vous pouvez voir, les éléments qui ont étés filtrés sont:
 
 4. Configurez le fichier .env avec les champs suivant:
   ```bash
-   PORT=
-   NODE_ENV=
-   JWT_SECRET=
-   SSL_KEY_PATH=
-   SSL_CERT_PATH=
-   MONGO_URI=
-   SERVER_HTTP=
+    PORT=
+    NODE_ENV=
+    JWT_SECRET=
+    UNEXPIRABLE_JWT_TOKEN=
+    SSL_KEY_PATH=key.pem
+    SSL_CERT_PATH=cert.pem
+    MONGO_URI_DEV= 
+    MONGO_URI_TEST= 
+    OFFSET=
   ```
 5. Démarrez le serveur :
   ```bash
