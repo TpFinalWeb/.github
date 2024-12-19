@@ -209,6 +209,7 @@ Comme vous pouvez voir, les éléments qui ont étés filtrés sont:
    SSL_KEY_PATH=
    SSL_CERT_PATH=
    MONGO_URI=
+   SERVER_HTTP=
   ```
 5. Démarrez le serveur :
   ```bash
