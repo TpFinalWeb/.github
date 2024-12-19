@@ -249,6 +249,28 @@ Comme vous pouvez voir, les éléments qui ont étés filtrés sont:
 
 ## 🛠️ **Utilisation de l'API**
 
+### Endpoint CRUD
+
+**GET /games/**
+  - Description : Récupère tous les jeux.
+  - Réponse : Liste des jeux avec leurs informations (nom, description, score, etc.).
+
+**GET /games/:id**
+  - Description : Récupère le jeu avec l'id fournie.
+  - Réponse : Le jeux avec ses informations (nom, description, score, etc.).
+
+**POST /games/**
+  - Description : Crée un jeu et l'ajoute à la bd.
+  - Réponse : Un message confirmant la création du jeu.
+
+**PUT /games/:id**
+  - Description : Modifier le jeu avec l'id fournie.
+  - Réponse : Un message confirmant la modification du jeu.
+
+**DELETE /games/:id**
+  - Description : Supprimer le jeu avec l'id fournie.
+  - Réponse : Un message confirmant la suppression du jeu.
+
 ### Endpoints Utilisateur
 
 **POST /register**
